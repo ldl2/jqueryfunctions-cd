@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!I'm good it tells browser what language i'm in>
+<html lang="en">
+	<head>
+		<!I'm the title at the top of the page>_
+		<title>JQuery Functions</title>
+		<!I'm that cool google like description>
+		<meta name="decription" content="bringing it all together">
+		<!I tell browsers which charactor sets i need>
+		<meta charset="utf-8">
+		<!i'm the css>
+		<link rel="stylesheet" type="text/css" href="jqfx.css">
+		<!I bring in jquery>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.click').click(function(){
+					alert("jquery is smexy");
+				})
+				$('.hide').click(function(){
+					$('.hide2').hide("slow");
+
+				})
+				$('.show').click(function(){
+					$('.show2').show('slow');
+
+				})
+				$('.toggle').click(function(){
+					$('.toggle2').toggle('slow');
+
+				})
+				$('.slidedown').click(function(){
+					$('.slidedown2').slideDown('slow');
+
+				})
+				$('.slideup').click(function(){
+					$('.slideup2').slideUp('slow');
+
+				})
+				$('.slidetoggle').click(function(){
+					$('.slidetoggle2').slideToggle('slow');
+
+				})
+				$('.fadein').click(function(){
+					$('.fadein2').fadeIn('slow');
+
+				})
+				$('.fadeout').click(function(){
+					$('.fadeout2').fadeOut('slow');
+
+				})
+				$('.addclass').click(function(){
+					$('p').addClass('newclass');
+
+				})
+				//<!I just used $('.before') becuase I didn't have other different text to add and it was woudl have gone everywhere elsewise>
+				$('.before').click(function(){
+					$('.before').before('<p> brand new stuff to play with</p>');
+				})
+				$('.after').click(function(){
+					$('.after').after('<p>brand new stuff to play with</p>');
+				})
+				$('.append').click(function(){
+					$('p').append('!!!!!');
+				})
+				$('.html').click(function(){
+					$('.html2').html('<p> what did you do</p>');
+				})
+				$('.attribute').click(function(){
+					var atty=$('.attribute2').attr("title");
+						alert(atty);
+				})
+				$('.value').click(function(){
+					var valy=$('.value2').val();
+						alert(valy);
+				})				
+			})</script>
+	</head>
+	<body>
+		<div>
+			<h1 class="title">
+				Click
+			</h1>
+			<p class="describe">
+				Description in api: Bind an event handler to the "click" JavaScript event, or trigger that event on an element.
+			</p>
+			<form>
+				<button class="click" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to get a response
+			</p>
+		</div>
+		<div>
+			<h1 class="title">
+				Hide
+			</h1>
+			<p class="describe">
+				Description in api: Hide the matched elements.
+			</p>
+			<form>
+				<button class="hide" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to hide image
+			</p>
+			<! do the stupid alt thing>
+			<img class="hide2" src="http://i.imgur.com/S4UoWPj.jpg" alt="no space I guess"></img>
+		</div>
+		<div>
+			<h1 class="title">
+				Show
+			</h1>
+			<p class="describe">
+				Description in api: Display the matched elements
+			</p>
+			<form>
+				<button class="show" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to show a image
+			</p>
+			<img class="show2" src="http://i.imgur.com/S4UoWPj.jpg" alt="no space I guess"></img>
+		</div>
+		<div>
+			<h1 class="title">
+				Toggle
+			</h1>
+			<p class="describe">
+				Description in api: Display or hide matched elements
+			</p>
+			<form>
+				<button class="toggle" type="button">Click me!</button>
+			</form>
+			<p class="toggle">
+				click button show then hide image
+			</p>
+			<img class="toggle2" src="http://i.imgur.com/S4UoWPj.jpg" alt="no space I guess"></img>
+		</div>
+		<div>
+			<h1 class="title">
+				Slide down
+			</h1>
+			<p class="describe">
+				Description in api: Display the matched elements with a sliding motion.
+			</p>
+			<form>
+				<button class="slidedown" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to get image to scroll into existance-like old internet page loading 
+			</p>
+			<img class="slidedown2" src="http://i.imgur.com/S4UoWPj.jpg" alt="no space I guess"></img>
+		</div>
+		<div>
+			<h1 class="title">
+				Slide up
+			</h1>
+			<p class="describe">
+				Description in api: Hide the matched elements with a sliding motion.
+			</p>
+			<form>
+				<button class="slideup" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to get image to scroll into hiding-like old internet page in reverse 
+			</p>
+			<img class="slideup2" src="http://i.imgur.com/S4UoWPj.jpg" alt="no space I guess"></img>
+		</div>
+		<div>
+			<h1 class="title">
+				Slide Toggle
+			</h1>
+			<p class="describe">
+				Description in api: Display or Hide the matched elements with a sliding motion.
+			</p>
+			<form>
+				<button class="slidetoggle" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to get image to scroll into hiding or reappear-like old internet page  
+			</p>
+			<img class="slidetoggle2" src="http://i.imgur.com/S4UoWPj.jpg" alt="no space I guess"></img>
+		</div>
+		<div>
+			<h1 class="title">
+				Fade in
+			</h1>
+			<p class="describe">
+				Description in api:  Display the matched elements by fading them to opaque.
+			</p>
+			<form>
+				<button class="fadein" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button and image appears as if behind fog
+			</p>
+			<img class="fadein2" src="http://i.imgur.com/S4UoWPj.jpg" alt="no space I guess"></img>
+		</div>
+		<div>
+			<h1 class="title">
+				Fade out
+			</h1>
+			<p class="describe">
+				Description in api: Hide the matched elements by fading them to opaque
+			</p>
+			<form>
+				<button class="fadeout" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button and image disappears as if behind fog
+			</p>
+			<img class="fadeout2" src="http://i.imgur.com/S4UoWPj.jpg" alt="no space I guess"></img>
+		</div>
+		<div>
+			<h1 class="title">
+				Add Class
+			</h1>
+			<p class="describe">
+				Description in api: Adds the specified class(es) to each element in the set of matched elements.
+			</p>
+			<form>
+				<button class="addclass" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to add class to button element it can have a waiting CSS
+			</p>
+		</div>
+		<div>
+			<h1 class="title">
+				Before
+			</h1>
+			<p class="describe">
+				Description in api: Insert content, specified by the parameter, before each element in the set of matched elements.
+			</p>
+			<form>
+				<button class="before" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to add text--it will be before the button
+			</p>
+		<div>
+			<h1 class="title">
+				After
+			</h1>
+			<p class="describe">
+				Description in api: Insert content, specified by the parameter, after each element in the set of matched elements.
+			</p>
+			<form>
+				<button class="after" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to add text--it will be after the button
+			</p>
+		</div>
+		<div>
+			<h1 class="title">
+				Append
+			</h1>
+			<p class="describe">
+				Description in api: Insert content, specified by the parameter, to the end of each element in the set of matched elements.
+			</p>
+			<form>
+				<button class="append" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to add text--it will be in the button			
+			</p>
+		</div>
+		<div>
+			<h1 class="title">
+				html
+			</h1>
+			<p class="describe">
+				Description in api: Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.
+			</p>
+			<form>
+				<button class="html" type="button">Click me!</button>
+			</form>
+			<p class="html2 todo">
+				click button to retrieve an html element-the first of selected (class id etc)
+			</p>
+		</div>
+		<div>
+			<h1 class="title">
+				attr-Attribute
+			</h1>
+			<p class="describe">
+				Description in api: Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.
+			</p>
+			<form>
+				<button class="attribute" type="button">Click me!</button>
+				<p class=attribute2 title="screw checkboxes">Yep that took to long becuase (see popup)</p>
+			</form>
+			<br>
+			<p class="todo">
+				click button to find or add attribute text-like labels
+			</p>
+		<div>
+			<h1 class="title">
+				val-value check
+			</h1>
+			<p class="describe">
+				Description in api: Get the current value of the first element in the set of matched elements or set the value of every matched element.
+			</p>
+			<form>
+				<button class="value" type="button">Click me!</button>
+				<p><input  class="value2" type="checkbox"  value="check to proceed">Need to check me just go to the button to proceed</input></p>
+			</form>
+			<p class="todo">
+				click button to tell you what something is currently set to.
+			</p>
+		</div>
+		<div>
+			<h1 class="title">
+				Text
+			</h1>
+			<p class="describe">
+				Description in api: Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+			</p>
+			<form>
+				<button class="click" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to get text from an element			
+			</p>
+		</div>
+		<div>
+			<h1 class="title">
+				Data
+			</h1>
+			<p class="describe">
+				Description in api: Store arbitrary data associated with the matched elements or return the value at the named data store for the first element in the set of matched elements.
+			</p>
+			<form>
+				<button class="click" type="button">Click me!</button>
+			</form>
+			<p class="todo">
+				click button to get or set data from an element
+			</p>
+		</div>
+	</body>
+</html>

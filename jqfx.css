@@ -1,0 +1,43 @@
+*{
+ 	margin: 0px;
+ 	padding: 0px;
+ 	text-align: center;
+}
+img{
+	width: 100px;
+	height: auto;
+}
+div{
+	border-top: 2px solid black;
+}
+p{
+	margin-bottom: 20px;
+}
+.describe{
+	font-style: italic;
+}
+form{
+	display: inline-block;
+}
+button{
+	background-color: #CEE3F8;
+	border: 2px solid grey;
+	border-radius: 5px;
+	height: 35px;
+	width: 75px;
+}
+.todo{
+	display: inline-block;;
+}
+.show2{
+	display: none;
+}
+.slidedown2{
+	display: none;
+}
+.fadein2{
+	display: none;
+}
+.newclass{
+	color: purple;
+}
